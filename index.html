@@ -7,17 +7,22 @@
     <title>
         Locate
     </title>
-    <link rel="stylesheet"
-            href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-            integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-            crossorigin=""/>
+    <!-- leaflet link -->
+    <link rel="stylesheet" href="./public/css/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
             integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-            crossorigin="">
-    </script>
+            crossorigin=""></script>
+    <!-- mapbox call for map tiles -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <!-- marker cluster plugin -->
+    <link rel="stylesheet" href="./dist/MarkerCluster.css"/>
+    <link rel="stylesheet" href="./dist/MarkerCluster.Default.css"/>
+    <script src="./dist/leaflet.markercluster.js"></script>
+    <!-- leaflet filter plugin -->
+    <script src="./public/js/leaflet.markercluster.layersupport.js"></script>
+    <!-- classic style -->
     <link rel="stylesheet" href="./public/css/style.css"/>
 </head>
 <body>

@@ -7,9 +7,6 @@
 #map {
     width: 100vw;
     height: 100vh;
-    /* position: absolute;
-    top: 0;
-    bottom: 0; */
 }
 
 .marker {
@@ -22,6 +19,12 @@
 }
 .train-marker {
     filter: invert(42%) sepia(44%) saturate(3062%) hue-rotate(326deg) brightness(101%) contrast(109%);
+}
+
+.leaflet-tooltip {
+    border: 2px solid #1DA1F2;
+    padding: 5px;
+    font-weight: bold;
 }
 
 /* blue #1DA1F2 */
