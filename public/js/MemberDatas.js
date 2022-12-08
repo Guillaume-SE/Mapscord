@@ -1,4 +1,5 @@
 // https://geojson.io/#map=2/0/20 for easy modification/add new point
+// for GeoJSON data, longitude before latitute
 
 const userLocation = {
     "type": "FeatureCollection",
@@ -18,7 +19,7 @@ const userLocation = {
             "type": "Feature",
             "properties": {
                 "name": "Black Widow",
-                "techno": "Javascript"
+                "techno": "PHP"
             },
             "geometry": {
                 "coordinates": [-4.464783857752906, 48.44950002078059],
@@ -29,7 +30,7 @@ const userLocation = {
             "type": "Feature",
             "properties": {
                 "name": "Thor",
-                "techno": "Javascript"
+                "techno": "Wordpress"
             },
             "geometry": {
                 "coordinates": [3.0344632192197594, 50.6308349017645],
@@ -39,55 +40,22 @@ const userLocation = {
         {
             "type": "Feature",
             "properties": {
-                "name": "Aquaman",
+                "name": "Hulk",
                 "techno": "Javascript"
             },
             "geometry": {
-                "coordinates": [2.3520384891548076, 48.85654632550046],
+                "coordinates": [5.040430614551354, 47.3338449573981],
                 "type": "Point"
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "name": "Starlord",
+                "name": "Antman",
                 "techno": "PHP"
             },
             "geometry": {
-                "coordinates": [-3.582890396337717, 48.308982189798],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Nick Fury",
-                "techno": "PHP"
-            },
-            "geometry": {
-                "coordinates": [0.6458898638994413, 47.32297057130981],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Hulk",
-                "techno": "PHP"
-            },
-            "geometry": {
-                "coordinates": [4.83488334120284, 45.767637597693636],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Batman",
-                "techno": "PHP"
-            },
-            "geometry": {
-                "coordinates": [-0.5798142059766747, 44.83787295655023],
+                "coordinates": [0.22078877217430204, 43.836638602704994],
                 "type": "Point"
             }
         },
@@ -98,51 +66,7 @@ const userLocation = {
                 "techno": "Wordpress"
             },
             "geometry": {
-                "coordinates": [-4.485028755278336, 48.39127105403833],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Antman",
-                "techno": "Wordpress"
-            },
-            "geometry": {
-                "coordinates": [4.83488334120284, 45.767637597693636],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Spiderman",
-                "techno": "Wordpress"
-            },
-            "geometry": {
-                "coordinates": [-0.5798142059766747, 44.83787295655023],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Thanos",
-                "techno": "Wordpress"
-            },
-            "geometry": {
-                "coordinates": [7.818808747175325, 46.687080443110034],
-                "type": "Point"
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Superman",
-                "techno": "Wordpress"
-            },
-            "geometry": {
-                "coordinates": [-2.508904951888269, 48.109601106887936],
+                "coordinates": [-1.2866677017644008, 46.87228915765078],
                 "type": "Point"
             }
         }
