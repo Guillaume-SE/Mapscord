@@ -1,30 +1,9 @@
-import config               from './public/js/Config.js';
-import userLocation         from './public/js/MemberDatas.js';
+import {street, satellite, topographie, pisteCycl} from './public/js/TileLayer.js';
+import userLocation     from './public/js/MemberDatas.js';
+import { memberMarker } from './public/js/MarkerStyle.js';
+import memberJavascript     from './public/js/DevJS.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-
-const accessToken = config.accessToken;
-
-// main layer
-const street = L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/streets-v12/tiles/{z}/{x}/{y}?access_token=${accessToken}`, {
-	minZoom: 2,
-    maxZoom: 20,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | <a href="https://www.mapbox.com/contribute/#/?utm_source=https%3A%2F%2Fdocs.mapbox.com%2F&utm_medium=attribution_link&utm_campaign=referrer&l=10%2F40%2F-74.5&q=">Improve this map</a>'
-});
-// optionnal layer
-const satellite = L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v12/tiles/{z}/{x}/{y}?access_token=${accessToken}`, {
-	maxZoom: 20,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | &copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> | <a href="https://www.mapbox.com/contribute/#/?utm_source=https%3A%2F%2Fdocs.mapbox.com%2F&utm_medium=attribution_link&utm_campaign=referrer&l=10%2F40%2F-74.5&q=">Improve this map</a>'
-});
-const topographie = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-	maxZoom: 20,
-	attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
-});
-const pisteCycl = L.tileLayer('https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png', {
-	maxZoom: 20,
-	attribution: '<a href="https://github.com/cyclosm/cyclosm-cartocss-style/releases" title="CyclOSM - Open Bicycle render">CyclOSM</a> | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
-
 // MAP et LAYER
 const map = L.map('map', {
     center: [46.48361, 2.52639],
@@ -32,17 +11,11 @@ const map = L.map('map', {
     layers: [street]
 });
 
-// MARKERS STYLE
-const memberIcon = L.icon({
-    iconUrl: 'public/img/icon/marker.svg',
-    iconSize: [30, 30],
-    iconAnchor: [15, 28],
-    className: 'marker'
-});
-
 const membres = userLocation.features;
 
-const initClusterGroup = L.markerClusterGroup.layerSupport({showCoverageOnHover: false});
+const initClusterGroup = L.markerClusterGroup.layerSupport({
+    showCoverageOnHover: false
+});
 initClusterGroup.addTo(map);
 
     let markerJavascript = L.layerGroup();
@@ -56,7 +29,7 @@ initClusterGroup.addTo(map);
     const membreLatitude = membresInfos.geometry.coordinates[1];
     const membreLongitude = membresInfos.geometry.coordinates[0];
 
-    const marker = L.marker([membreLatitude, membreLongitude], { icon: memberIcon });
+    const marker = L.marker([membreLatitude, membreLongitude], { icon: memberMarker });
     marker.bindTooltip(membreName, {
         permanent: true,
         direction: "top"
@@ -92,4 +65,5 @@ const markers = {
     markerJavascript.addTo(map);
     markerPHP.addTo(map);
     markerWordpress.addTo(map);
+
 });
