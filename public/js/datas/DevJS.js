@@ -1,4 +1,7 @@
-const memberJavascript ={
+// https://geojson.io/#map=2/0/20 for easy modification/add new point
+// for GeoJSON data, longitude before latitute
+
+const developerJavascript = {
     "type": "FeatureCollection",
     "features": [
         {
@@ -27,14 +30,14 @@ const memberJavascript ={
             "type": "Feature",
             "properties": {
                 "name": "Falcon",
-                "techno": "Javascript"
+                "techno": "PHP"
             },
             "geometry": {
-                "coordinates": [-4.464783857752906, 48.44950002078059],
+                "coordinates": [-1.2866677017644008, 46.87228915765078],
                 "type": "Point"
             }
         }
     ]
 }
 
-export default memberJavascript;
+export { developerJavascript };

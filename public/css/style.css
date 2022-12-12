@@ -4,26 +4,18 @@
     box-sizing: border-box;
 }
 
-#map {
+.map-container {
     width: 100vw;
     height: 100vh;
 }
-
 .marker {
     filter: invert(56%) sepia(20%) saturate(5676%) hue-rotate(175deg) brightness(97%) contrast(96%);
 }
-.airport-marker {
-    filter: invert(76%) sepia(97%) saturate(2124%) hue-rotate(356deg) brightness(99%) contrast(91%);
-    /* filter: invert(89%) sepia(29%) saturate(3442%) hue-rotate(351deg) brightness(99%) contrast(97%); */
-    /* filter: invert(26%) sepia(52%) saturate(1929%) hue-rotate(247deg) brightness(83%) contrast(102%); */
-}
-.train-marker {
-    filter: invert(42%) sepia(44%) saturate(3062%) hue-rotate(326deg) brightness(101%) contrast(109%);
-}
 
+/* leaflet css overwrite */
 .leaflet-tooltip {
     border: 2px solid #1DA1F2;
-    padding: 5px;
+    padding: 1px 5px;
     font-weight: bold;
 }
 
