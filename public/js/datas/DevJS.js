@@ -8,6 +8,7 @@ const developerJavascript = {
             "type": "Feature",
             "properties": {
                 "name": "Iron-Man",
+                "Ville": "Monaco",
                 "techno": "Javascript"
             },
             "geometry": {
@@ -19,6 +20,7 @@ const developerJavascript = {
             "type": "Feature",
             "properties": {
                 "name": "Black Widow",
+                "Ville": "Brest",
                 "techno": "Javascript"
             },
             "geometry": {
@@ -30,6 +32,7 @@ const developerJavascript = {
             "type": "Feature",
             "properties": {
                 "name": "Falcon",
+                "Ville": "La Duranderie",
                 "techno": "PHP"
             },
             "geometry": {

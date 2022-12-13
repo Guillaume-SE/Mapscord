@@ -8,6 +8,7 @@ const developerPHP = {
             "type": "Feature",
             "properties": {
                 "name": "Thor",
+                "Ville": "Lille",
                 "techno": "PHP"
             },
             "geometry": {
@@ -19,6 +20,7 @@ const developerPHP = {
             "type": "Feature",
             "properties": {
                 "name": "Hulk",
+                "Ville": "Dijon",
                 "techno": "PHP"
             },
             "geometry": {
@@ -30,6 +32,7 @@ const developerPHP = {
             "type": "Feature",
             "properties": {
                 "name": "Antman",
+                "Ville": "Lannepax",
                 "techno": "PHP"
             },
             "geometry": {

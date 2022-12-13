@@ -8,6 +8,7 @@ const developerWordpress = {
             "type": "Feature",
             "properties": {
                 "name": "Spiderman",
+                "Ville": "Route du Rupt du Bâmont",
                 "techno": "Wordpress"
             },
             "geometry": {
@@ -19,6 +20,7 @@ const developerWordpress = {
             "type": "Feature",
             "properties": {
                 "name": "Batman",
+                "Ville": "Labastide-Paumès",
                 "techno": "Wordpress"
             },
             "geometry": {
@@ -30,6 +32,7 @@ const developerWordpress = {
             "type": "Feature",
             "properties": {
                 "name": "Nick Fury",
+                "Ville": "Les Marquiers",
                 "techno": "Wordpress"
             },
             "geometry": {
