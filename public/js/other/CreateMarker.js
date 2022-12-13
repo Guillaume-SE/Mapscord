@@ -25,7 +25,6 @@ const markerPHP = L.geoJSON(developerPHP, {
             permanent: true,
             direction: "top"
         });
-        // layer.bindPopup(feature.properties.techno);
     }
 });
 
@@ -38,7 +37,6 @@ const markerWordpress = L.geoJSON(developerWordpress, {
             permanent: true,
             direction: "top"
         });
-        // layer.bindPopup(feature.properties.techno);
     }
 });
 
