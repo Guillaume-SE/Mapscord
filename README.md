@@ -4,7 +4,7 @@ Mapscord est une carte interactive affichant l'emplacement géographique des mem
 
 Les données de la carte sont mise à jour régulièrement.
 
-**Ajout**:
+### Ajout:
 
 Pour être ajouté à la carte il suffit d'être membre du discord, de se rendre dans le channel dédié à la carte et d'écrire en message les informations comme suivant:  
 
@@ -18,7 +18,7 @@ pseudo discord / Ville de résidence / Langage principal
 | `Ville de résidence`| La ville où vous habitez avec la précision de votre choix                 |
 | `Langage principal` | Le langage que vous utilisez le plus, vous pouvez bien sûr choisir un CMS |
 
-**Modification**:
+### Modification:
 
 Si vous êtes déjà présent sur la carte et que vous voulez modifier une ou plusieurs informations ne modifiez pas votre message d'ajout mais écrivez plutôt un message comme suivant:
 
@@ -34,7 +34,7 @@ Exemple si vous n'avez que le pseudo à modifier:
 Batman -> Superman / Tokyo / Javascript
 ```
 
-**Suppression**:
+### Suppression:
 
 Si vous voulez être retiré de la carte, écrivez:
 ```
