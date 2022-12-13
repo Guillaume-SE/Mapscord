@@ -4,11 +4,11 @@ import { developerWordpress }  from '../datas/DevWordpress.js';
 import { memberMarker }        from './MarkerStyle.js';
 
 const markerJavascript = L.geoJSON(developerJavascript, {
-    pointToLayer: function(feature, latlng) {
+    pointToLayer: function(feature, latlng) { // create marker
         return L.marker(latlng, { icon: memberMarker });
     },
     onEachFeature: function (feature, layer) {
-        layer.bindTooltip(feature.properties.name, {
+        layer.bindTooltip(feature.properties.name, { // add info around the marker
             permanent: true,
             direction: "top"
         });

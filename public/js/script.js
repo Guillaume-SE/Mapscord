@@ -1,12 +1,9 @@
 import { map } from './config/InitMap.js';
+import { markerCluster }  from './other/CreateMarkerCluster.js';
 import { markerJavascript, markerPHP, markerWordpress } from './other/CreateMarker.js';
 import { controlPanel }  from './other/ControlPanel.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-
-const markerCluster = L.markerClusterGroup.layerSupport({
-    showCoverageOnHover: false
-});
 
 markerCluster.addTo(map);
 
